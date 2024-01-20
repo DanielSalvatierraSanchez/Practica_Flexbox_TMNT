@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--tn-bg-color);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+  --tn-color: rgb(255, 0, 0);
+  --tn-leo-color: rgb(33, 33, 187);
+  --tn-dona-color: rgb(175, 37, 175);
+  --tn-raf-color: rgb(225, 20, 20);
+  --tn-miche-color: rgb(244, 168, 26);
+  --tn-bg-color: rgb(112, 249, 112);
+}
+
+header {
+  display: flex;
+  align-content: center;
+  flex-flow: column wrap;
+  margin: 10px 30px;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-size: 50px;
+  color: var(--tn-color);
+  border: none;
+}
+
+header > div > img {
+  border-radius: 20px;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+main > section > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: large;
+  max-width: 300px;
+  max-height: 400px;
+  margin: 20px;
+  padding: 10px;
+}
+
+div > img {
+  border-radius: 20px;
+}
+
+.donatello {
+  color: var(--tn-dona-color);
+}
+
+.leonardo {
+  color: var(--tn-leo-color);
+}
+
+.raphael {
+  color: var(--tn-raf-color);
+}
+
+.michelangelo {
+  color: var(--tn-miche-color);
+}
+
+footer {
+  margin-top: 100px;
+  margin: 0;
+  padding: 50px 50px;
+  text-align: center;
+  font-size: x-large;
+  color: var(--tn-color);
+}
+
+@media (max-width: 630px) {
+  header img {
+    width: 375px;
+  }
+
+  h1 {
+    align-self: center;
+  }
+
+  main > section > div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* font-size: large; */
+    max-width: 200px;
+    max-height: 300px;
+    /* margin: 0; */
+    /* padding: 10px; */
+  }
+}
